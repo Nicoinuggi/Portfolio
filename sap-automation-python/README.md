@@ -1,25 +1,19 @@
 # Automating SAP Data Pipelines with Python and Power BI
 
-## Descripción
-Este proyecto automatiza la extracción de datos desde SAP, procesa los datos con pandas, los visualiza en Power BI y automatiza todo el flujo de trabajo utilizando un batch file o Apache Airflow.
+## Description
+This project automates the extraction of data from SAP, processes the data using pandas, visualizes it in Power BI, and automates the entire workflow using a batch file or Apache Airflow.
 
-## Tecnologías Usadas
-- Python
-- pandas
-- Power BI
-- SAP (pysap/sapnwrfc)
-- Batch File / Apache Airflow
+## Technologies Used
+- **Python** 
+- **SAP ECC** 
+- **Power BI**
+- **Windows Task Scheduler** / **Apache Airflow**
 
-## Estructura del Proyecto
-- **sap_integration/**: Scripts para extraer datos de SAP.
-- **data_processing/**: Scripts para procesar y combinar los datos usando pandas.
-- **powerbi/**: Archivos de Power BI para visualizaciones.
-- **automation/**: Scripts de automatización (batch file o DAG de Airflow).
-- **diagrams/**: Diagramas del flujo de trabajo.
-- **data/**: Datos brutos y procesados.
-
-## Instrucciones
-1. **Clonar el Repositorio**
-   ```bash
-   git clone https://github.com/tu-usuario/automatizacion-sap-python.git
-   cd automatizacion-sap-python
+## Project Structure
+```plaintext
+├── Sap Integration   # Scripts for extracting data from SAP
+├── Data Processing   # Scripts for processing and combining data using pandas
+├── Power Bi          # Power BI files for visualizations
+├── Automation        # Automation scripts (Batch file + Windows Task Scheduler or Airflow DAG)
+├── Diagrams          # Workflow diagrams
+└── Data              # Raw and processed data
