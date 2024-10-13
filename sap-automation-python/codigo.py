@@ -1,14 +1,14 @@
 import subprocess
 import win32com.client
 import time
-import os
-from datetime import timedelta
-from datetime import datetime
-import calendar
 import psutil
 
-# 1. Abrir SAP GUI usando subprocess (reemplaza el script en .bat)
+# Open SAP GUI
 sap_executable_path = r'C:\Program Files (x86)\SAP\FrontEnd\SAPgui\saplogon.exe'
+
+connection_name = "YOUR_CONNECTION_NAME"  # Change to your connection name
+username = "YOUR_USERNAME"  # Change to your username
+password = "YOUR_PASSWORD"  # Change to your password
 
 def is_process_running(process_name):
     for proc in psutil.process_iter(['name']):
@@ -16,43 +16,46 @@ def is_process_running(process_name):
             return True
     return False
 
-# Verificar si el proceso saplogon.exe está corriendo
+# Check if saplogon.exe is running
 if is_process_running("saplogon.exe"):
-    # Si el proceso está corriendo, lo cerramos de forma silenciosa
-    subprocess.run('taskkill /IM saplogon.exe /F >nul 2>&1')
-else:
-    subprocess.Popen([sap_executable_path])
-# Cerrar cualquier instancia previa de SAP GUI (similar a taskkill en PowerShell)
-# subprocess.run('taskkill /IM saplogon.exe /F', shell=True)
+    # Kill task if running
+    subprocess.run('TASKKILL /F /IM saplogon.exe /T')
 
-# Abrir SAP GUI
+subprocess.Popen([sap_executable_path])
 
-# Esperar unos segundos para que SAP GUI se inicie (ajusta según sea necesario)
-time.sleep(5)
+# Wait process to open
+while not is_process_running("saplogon.exe"):
+    time.sleep(5) #Change if your system take longer to open SAP Logon window
+    
+try:
+    #  Connect SAP GUI using win32com.client
+    sap_gui_app = win32com.client.GetObject("SAPGUI")  
+    application = sap_gui_app.GetScriptingEngine  
+    
+    if not application:
+        print("Error connecting SAP GUI Scripting.")
+    else:
+        
+        connection = application.OpenConnection(connection_name, True)  
+        session = connection.Children(0)
+    
+        # Authenticate in SAP
+        session.findById("wnd[0]/usr/txtRSYST-BNAME").Text = username #
+        session.findById("wnd[0]/usr/pwdRSYST-BCODE").Text = password  # 
+        session.findById("wnd[0]/usr/pwdRSYST-BCODE").setFocus()
+        session.findById("wnd[0]/usr/pwdRSYST-BCODE").caretPosition = len(password)  
+        session.findById("wnd[0]").sendVKey(0)  
+    
+        # Maximizar la ventana de SAP
+        session.findById("wnd[0]").maximize()
+    
+        #Here you can paste your SAP GUI Script to downoload the file you need- You can use SAP GUI Scripting tool for this and  check the format.
+        session.findById("wnd[0]/tbar[0]/okcd").text = "/nmb52" # Transaction name
+        session.findById("wnd[0]").sendVKey(0) 
+    
 
-# 2. Conectar a SAP GUI usando win32com.client
-sap_gui_app = win32com.client.GetObject("SAPGUI")  # Conectar a SAP GUI
-application = sap_gui_app.GetScriptingEngine  # Obtener el motor de scripting
-
-if not application:
-    print("Error connecting SAP GUI Scripting.")
-else:
-    # Abrir una conexión en SAP GUI (equivalente a tu VBA)
-    connection = application.OpenConnection("CONNECTION NAME", True)  # Cambia al nombre de tu conexión
-    session = connection.Children(0)
-
-    # 3. Autenticarse en SAP
-    session.findById("wnd[0]/usr/txtRSYST-BNAME").Text = "USER"  # Cambia al nombre de usuario
-    session.findById("wnd[0]/usr/pwdRSYST-BCODE").Text = "PASSWORD"  # Cambia a tu contraseña
-    session.findById("wnd[0]/usr/pwdRSYST-BCODE").setFocus()
-    session.findById("wnd[0]/usr/pwdRSYST-BCODE").caretPosition = len("PASSWORD")  # Ajustar la posición del cursor
-    session.findById("wnd[0]").sendVKey(0)  # Simular la tecla "Enter"
-
-    # Maximizar la ventana de SAP
-    session.findById("wnd[0]").maximize()
-
-    # 4. Ejecutar el script de SAP
-    # Aquí es donde puedes pegar tu lógica de SAP recordar poner () luego de Cada SETFOCUS, press, select y ver sendVkey (0)  y caret
+except Exception as e:
+    print(f"An error occurred: {e}")
  
 
 
