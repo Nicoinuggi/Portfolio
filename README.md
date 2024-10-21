@@ -1,31 +1,52 @@
-# Portfolio
+# Data Engineering & BI Portfolio
 
-## 📊 **Data Engineer & Business Intelligence Portfolio**
+## Overview
 
-Welcome to my project portfolio. I am **Nicolas**, a data engineer specializing in automation, data integration, and building solutions using tools like Python, SAP, Power BI, and Apache Airflow. My focus is on creating automated workflows and designing scalable data pipelines that optimize business processes.
+I am an **Aspiring Data Engineer** with a solid background in **data analysis**, **automation**, and **business intelligence**. My goal is to expand my expertise in data engineering, building on my skills in **data pipelines**, **data modeling**, and **data automation**. This portfolio showcases projects where I apply these concepts to solve real-world problems.
 
-### 🔑 **Key Skills and Technologies:**
-- **Languages:** Python, SQL, DAX
-- **ETL Tools:** Pandas, SQL Server Integration Services (SSIS)
-- **Business Intelligence:** Power BI, SAP BI
-- **Orchestration:** Apache Airflow, Windows Task Scheduler
-- **Other:** SAP automation, large-scale data processing, cloud data handling with Azure
+## Projects Highlight
 
----
+### 1. Data Pipelines and Automation
+- **SAP Automation with Python**: Automating SAP data extraction using Python and combining datasets with Pandas, integrating results into Power BI.
+- **Batch File Integration**: Leveraging Windows Task Scheduler to automate and streamline the process.
+- **Apache Airflow Automation** (optional): Demonstrating orchestration and scheduling capabilities using Airflow.
 
-### 📂 **Featured Projects:**
 
-1. **SAP Automation with Python**  
-   _Description:_ An automated workflow that extracts data from SAP, combines it with other sources using Pandas, connects to Power BI for visualization, and uses a batch file for scheduled execution.  
-   [Link to project](#project_link)
+### 2. Big Data Processing with Apache Spark & Kubernetes
+This project demonstrates how to use Apache Spark to process large datasets in parallel, orchestrating Docker containers via Kubernetes to optimize performance. It showcases dynamic partitioning and cloud scalability, with an automated workflow using Apache Airflow as the orchestrator for the entire process.
 
-2. **Data Warehouse and Data Marts for Power BI**  
-   _Description:_ Creation of a Data Warehouse and several Data Marts optimized for integration with SAP BI and visualization in Power BI. Includes performance improvements and data handling for multiple countries.  
-   [Link to project](#project_link)
+### 3. Data Warehousing and BI Dashboards
+- **Data Marts vs. Data Warehouses**: A project comparing performance, scalability, and use cases for Data Marts versus Data Warehouses, optimized for business intelligence tools like Power BI.
+- **Dashboard for Volume Comparison**: A Power BI dashboard showcasing scenarios to decide between Data Marts or a Data Warehouse based on data volume and complexity.
 
-3. **Task Orchestration with Apache Airflow**  
-   _Description:_ A project focused on automating workflows using Airflow to optimize the process of updating models and reports in Power BI.  
-   [Link to project](#project_link)
+### 4. Ongoing Learning and Experimentation
+- **SQL Performance Tuning**: Optimizing queries in large databases.
+- **Cloud Technologies**: Working with services like Azure and AWS for large-scale data processing and storage solutions.
+- **Data Modeling**: Constant improvement in creating scalable and efficient data models for BI tools.
+
+## About Me
+
+I'm on a continuous journey to become a proficient **Data Engineer**, building on my **industrial engineering** and **business intelligence** background. I aim to deliver valuable insights and automation by leveraging my skills.
+
+Feel free to explore the projects, and I’m always open to collaboration or discussions on data-related topics.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 
