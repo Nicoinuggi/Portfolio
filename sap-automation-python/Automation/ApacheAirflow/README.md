@@ -2,6 +2,9 @@
 
 This step demonstrates the orchestration and automation of ETL processes using Apache Airflow, focusing on creating the necessary DAG (Directed Acyclic Graph) to automate workflows. Airflow provides a more scalable and efficient way to orchestrate tasks and automate workflows compared to simpler alternatives like batch scripts and Windows Task Scheduler.
 
+
+![image](https://github.com/user-attachments/assets/e8fbe786-9442-4c5c-9537-277f71babce4)
+
 ## Key Steps
 
 ### 1. **Extraction**
@@ -15,3 +18,5 @@ The cleaned data is then loaded into Power BI, where semantic models and dashboa
 
 ## Conclusion
 The creation of a well-structured DAG is central to streamlining the entire workflow, from data extraction to reporting, minimizing manual intervention and reducing the risk of errors. This makes it an ideal solution for automating complex data processes and ensuring reliable, up-to-date reporting.
+
+
