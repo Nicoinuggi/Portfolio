@@ -1,7 +1,7 @@
 # Automating SAP Data Pipelines with Python and Power BI
 
 ## Description
-This project automates the extraction of data from SAP, processes the data using pandas, visualizes it in Power BI, and automates the entire workflow using a batch file with Windos Task Scheduler or Apache Airflow.
+This project automates the extraction of data from SAP, processes the data using pandas, visualizes it in Power BI, and automates the entire workflow using a batch file with Windos Task Scheduler or Apache Airflow. For compliance reasons, specific case examples are not included; instead, a general template is provided for users to adapt to their specific needs. This ensures that sensitive data and particular information remain confidential while following best practices for data security.
 
 ## Technologies Used
 - **Python** 
