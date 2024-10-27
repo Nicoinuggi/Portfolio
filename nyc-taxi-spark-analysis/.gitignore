@@ -1,0 +1,73 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual Environment
+venv/
+ENV/
+
+# Data files
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/sample/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Local environment variables
+.env
+
+# Docker
+.docker/
+docker-compose.override.yml
+*.pid
+.dockerignore
+
+# Airflow
+airflow.cfg
+unittests.cfg
+logs/
+
+# Spark
+spark-warehouse/
+metastore_db/
+derby.log
+
+# Kubernetes
+.kube/
+*.yaml
+*.yml
+
+# Operating System
+.DS_Store
+Thumbs.db

@@ -1,0 +1,22 @@
+# Core dependencies
+pandas==2.0.0
+numpy==1.24.0
+pyspark==3.4.0
+jupyter==1.0.0
+python-dotenv==1.0.0
+requests==2.31.0
+
+# Data processing
+pyarrow==14.0.1
+fastparquet==2023.10.1
+
+# Testing
+pytest==7.4.0
+
+# Development
+black==23.3.0
+flake8==6.0.0
+
+# Documentation
+mkdocs==1.4.2
+mkdocs-material==9.1.15
