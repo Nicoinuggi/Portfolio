@@ -68,6 +68,6 @@ derby.log
 *.yaml
 *.yml
 
-# Operating System
+# Operating System v
 .DS_Store
 Thumbs.db
