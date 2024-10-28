@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# Crear directorio para los datos
+# Create folder
 mkdir -p data/raw
 
-# Descargar todos los tipos de datos de taxi
+# Download all taxi types
 for type in yellow green fhv; do
     mkdir -p data/raw/$type
     for month in {01..12}; do
