@@ -9,8 +9,8 @@ def create_sample_dataset():
     os.makedirs('data/sample', exist_ok=True)
     
     try:
-        # Leer el archivo original
-        df = pd.read_parquet('nyc-taxi-spark-analysis/data/raw/yellow_tripdata_2023-01.parquet')
+        # Leer el archivo original 
+        df = pd.read_parquet('/home/.../nyc-taxi-spark-analysis/data/raw/yellow_tripdata_2023-01.parquet')
         
         print(f"Archivo original tiene {len(df)} registros")
         
