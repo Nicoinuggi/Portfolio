@@ -10,7 +10,7 @@ def create_sample_dataset():
     
     try:
         # Leer el archivo original
-        df = pd.read_parquet('data/raw/yellow/yellow_tripdata_2023-01.parquet')
+        df = pd.read_parquet('nyc-taxi-spark-analysis/data/raw/yellow_tripdata_2023-01.parquet')
         
         print(f"Archivo original tiene {len(df)} registros")
         
