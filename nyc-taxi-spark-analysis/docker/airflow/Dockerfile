@@ -6,4 +6,4 @@ COPY requirements.txt .
 RUN pip install -r requirements.txt
 
 # Copiar los DAGs al contenedor
-COPY ./airflow/dags /opt/airflow/dags
+COPY ./src/airflow/dags /opt/airflow/dags
