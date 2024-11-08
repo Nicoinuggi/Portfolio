@@ -11,7 +11,7 @@ import subprocess
 
 def extract_from_sap():
     # Here you execute the Python script that controls SAP GUI for data extraction.
-    subprocess.run(["python", "/path/to/your/script/Sap_integration.py"])
+    subprocess.run(["python", "/path/to/your/script/sap_integration.py"])
 
 def transform_data():
     # This step is to transform the data extracted from SAP.
