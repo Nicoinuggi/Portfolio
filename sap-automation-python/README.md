@@ -2,7 +2,7 @@
 ![image](https://github.com/user-attachments/assets/939599bc-a210-44be-b930-124fda786ae6)
 
 ## Description
-This project automates the extraction of data from SAP, processes the data using pandas lib, visualizes it in Power BI, and automates the entire workflow using Apache Airflow or a batch file with Windos Task Scheduler for a simpler approach. For compliance reasons, specific case examples are not included; instead, a general template is provided for users to adapt to their specific needs. This ensures that sensitive data and particular information remain confidential while following best practices for data security.
+This project automates the extraction of data from SAP, processes the data using pandas lib, visualizes it in Power BI, and automates the entire workflow using Apache Airflow or a batch file with Windows Task Scheduler for a simpler approach. Specific case examples are not included. Instead, a general template is provided for users to adapt to their specific needs. 
 
 ## Technologies Used
 - **Python** 
