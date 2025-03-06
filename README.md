@@ -12,17 +12,12 @@ I am an **Aspiring Data Engineer** with a solid background in **data analysis**,
 - **Apache Airflow Automation** (optional): Demonstrating orchestration and scheduling capabilities using Airflow.
 
 
-### 2. Big Data Processing with Apache Spark & Kubernetes
+### 2. Big Data Processing with Apache Spark & Kubernetes (In Development)
 This project demonstrates how to use Apache Spark to process large datasets in parallel, orchestrating Docker containers via Kubernetes to optimize performance. It showcases dynamic partitioning and cloud scalability, with an automated workflow using Apache Airflow as the orchestrator for the entire process.
 
-### 3. Data Warehousing and BI Dashboards
+### 3. Data Warehousing and BI Dashboards (Coming Soon)
 - **Data Marts vs. Data Warehouses**: A project comparing performance, scalability, and use cases for Data Marts versus Data Warehouses, optimized for business intelligence tools like Power BI.
 - **Dashboard for Volume Comparison**: A Power BI dashboard showcasing scenarios to decide between Data Marts or a Data Warehouse based on data volume and complexity.
-
-### 4. Ongoing Learning and Experimentation
-- **SQL Performance Tuning**: Optimizing queries in large databases.
-- **Cloud Technologies**: Working with services like Azure and AWS for large-scale data processing and storage solutions.
-- **Data Modeling**: Constant improvement in creating scalable and efficient data models for BI tools.
 
 ## About Me
 
