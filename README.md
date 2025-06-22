@@ -11,7 +11,7 @@ This space documents my technical progress and highlights the projects I enjoy d
 
 - **practices/** → Language-specific exercises (Python, SQL, PySpark, KQL).
 - **projects/** → Real or simulated projects.
-- **fabric-challenge-certification/** → Labs and exercises from the official Microsoft Fabric DP-700 certification course.
+- **fabric-certification/** → Labs and exercises from the official Microsoft Fabric DP-700 certification prep course.
 
 ---
 
@@ -47,7 +47,7 @@ These folders contain practical exercises and technical experiments aimed at str
 
 ## 🎓 Microsoft Fabric – Challenge & Certification
 
-Repository with labs and exercises from the official DP-700 Microsoft Fabric certification. Includes hands-on work with:
+Repository with labs and exercises from the official DP-700 Microsoft Fabric certification. Includes work with:
 - Lakehouses and Warehouses (Delta + SQL)
 - Data Pipelines (ETL + Medallion Architecture)
 - Dataflows Gen2 (Power Query Online)
@@ -55,7 +55,7 @@ Repository with labs and exercises from the official DP-700 Microsoft Fabric cer
 - Eventstream and Eventhouse (Real-Time Analytics)
 
 
-📁 [`fabric-challenge-certification`](./fabric-challenge-certification)
+📁 [`fabric-certification`](./fabric-certification)
 
 ---
 
