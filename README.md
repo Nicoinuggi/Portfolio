@@ -1,4 +1,4 @@
-# 🧠 Nicolás Inuggi – Data Engineering & BI Portfolio
+# Nicolás Inuggi – Data Engineering & BI Portfolio
 
 Welcome to my technical portfolio.
 
@@ -48,11 +48,12 @@ These folders contain practical exercises and technical experiments aimed at str
 ## 🎓 Microsoft Fabric – Challenge & Certification
 
 Repository with labs and exercises from the official DP-700 Microsoft Fabric certification. Includes hands-on work with:
-- Lakehouse, Warehouse
-- Pipelines (Medallion Architecture)
-- Dataflows Gen2
-- Spark notebooks
-- Eventstream and Eventhouse
+- Lakehouses and Warehouses (Delta + SQL)
+- Data Pipelines (ETL + Medallion Architecture)
+- Dataflows Gen2 (Power Query Online)
+- Spark Notebooks (Delta Tables, Streaming)
+- Eventstream and Eventhouse (Real-Time Analytics)
+
 
 📁 [`fabric-challenge-certification`](./fabric-challenge-certification)
 
