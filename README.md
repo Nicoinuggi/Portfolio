@@ -1,49 +1,68 @@
-# Data Engineering & BI Portfolio
+# 🧠 Nicolás Inuggi – Data Engineering & BI Portfolio
 
-## Overview
+Welcome to my technical portfolio.
 
-I am an **Aspiring Data Engineer** with a solid background in **data analysis**, **automation**, and **business intelligence**. My goal is to expand my expertise in data engineering, building on my skills in **data pipelines**, **data modeling**, and **data automation**. This portfolio showcases projects where I apply these concepts to solve real-world problems.
-
-## Projects Highlight
-
-### 1. Data Pipelines and Automation
-- **SAP Automation with Python**: Automating SAP data extraction using Python and combining datasets with Pandas, integrating results into Power BI.
-- **Batch File Integration**: Leveraging Windows Task Scheduler to automate and streamline the process.
-- **Apache Airflow Automation** (optional): Demonstrating orchestration and scheduling capabilities using Airflow.
-
-
-### 2. Big Data Processing with Apache Spark & Kubernetes (In Development)
-This project demonstrates how to use Apache Spark to process large datasets in parallel, orchestrating Docker containers via Kubernetes to optimize performance. It showcases dynamic partitioning and cloud scalability, with an automated workflow using Apache Airflow as the orchestrator for the entire process.
-
-### 3. Data Warehousing and BI Dashboards (Coming Soon)
-- **Data Marts vs. Data Warehouses**: A project comparing performance, scalability, and use cases for Data Marts versus Data Warehouses, optimized for business intelligence tools like Power BI.
-- **Dashboard for Volume Comparison**: A Power BI dashboard showcasing scenarios to decide between Data Marts or a Data Warehouse based on data volume and complexity.
-
-## About Me
-
-I'm on a continuous journey to become a proficient **Data Engineer**, building on my **industrial engineering** and **business intelligence** background. I aim to deliver valuable insights and automation by leveraging my skills.
-
-Feel free to explore the projects, and I’m always open to collaboration or discussions on data-related topics.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+I'm an Industrial Engineer with a strong background in data analysis, automation, and BI. Currently leading automated developments in SAP, Power BI, and Python, while expanding my expertise into data engineering roles.  
+This space documents my technical progress and highlights the projects I enjoy developing or digging deeper into.
 
 ---
 
-### 📫 **Contact:**
-If you have any questions feel free to contact me at [nicoinuggi@gmail.com](mailto:nicoinuggi@gmail.com) or via [LinkedIn](https://www.linkedin.com/in/nicolas-inuggi).
+## 📁 Repository Structure
+
+- **practices/** → Language-specific exercises (Python, SQL, PySpark, KQL).
+- **projects/** → Real or simulated projects.
+- **fabric-challenge-certification/** → Labs and exercises from the official Microsoft Fabric DP-700 certification course.
+
+---
+
+## 💼 Featured Projects
+
+### 1. **SAP Automation with Python**
+**Tech Stack:** Python · SAP GUI Scripting · Windows Task Scheduler · Airflow · Power BI  
+**Description:** End-to-end automation of payment application in SAP. The solution includes file validation, document comparison, dynamic SAP execution in batches, and result notification.  
+**Impact:** Reduced manual effort and improved process reliability.  
+📁 [`sap-automation`](./sap-automation)
+
+---
+
+### 2. **NYC Taxi – Big Data Processing (In Progress)**
+**Tech Stack:** PySpark · Docker · Apache Airflow · Jupyter Notebooks  
+**Description:** A project to process large volumes of NYC taxi data using Spark in containers, with a planned Airflow orchestration pipeline.  
+**Status:** Initial structure and data loading in place.  
+**Note:** This project is temporarily paused to prioritize Fabric and SQL.  
+📁 [`nyc-taxi-spark`](./nyc-taxi-spark)
+
+---
+
+## 🧪 Technical Practices (WIP)
+
+These folders contain practical exercises and technical experiments aimed at strengthening core skills. Currently focusing on Microsoft Fabric and SQL.
+
+- `python`: Automation, validation, and modular scripting.
+- `sql`: Data transformations, analytics queries, and modeling.
+- `pyspark`: Data processing, partitioning, and performance optimization in Spark.
+- `kql`: Querying log data and metrics using KQL (Fabric environments).
+
+---
+
+## 🎓 Microsoft Fabric – Challenge & Certification
+
+Repository with labs and exercises from the official DP-700 Microsoft Fabric certification. Includes hands-on work with:
+- Lakehouse, Warehouse
+- Pipelines (Medallion Architecture)
+- Dataflows Gen2
+- Spark notebooks
+- Eventstream and Eventhouse
+
+📁 [`fabric-challenge-certification`](./fabric-challenge-certification)
+
+---
+
+## 📬 Contact
+
+📧 nicoinuggi@gmail.com  
+🔗 [LinkedIn](https://www.linkedin.com/in/nicolas-inuggi)
+
+---
+
+*Thanks for visiting my portfolio. I'm always open to collaboration, feedback, or discussions on data engineering, analytics, and automation.*
